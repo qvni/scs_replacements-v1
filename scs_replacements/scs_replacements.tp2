@@ -1,0 +1,18 @@
+BACKUP ~scs_replacements/backup~
+SUPPORT ~Discords, G3(Gibberlings3 Official): https://discord.gg/yTzjMTb or Infinity Engine: https://discord.gg/0rvJmMgIV5FHQTWT @auiwqi~
+VERSION ~33.6~
+README ~scs_replacements/scs_replacements-readme.txt~
+
+BEGIN ~Replacements~
+REQUIRE_PREDICATE !DIRECTORY_EXISTS ~./weidu_external/backup/stratagems~ ~SCS Cannot be installed.~
+REQUIRE_PREDICATE DIRECTORY_EXISTS ~./stratagems~ ~Requires SCS Folder.~
+NO_LOG_RECORD
+
+COPY + ~scs_replacements/ai~ ~./stratagems/ai~
+COPY + ~scs_replacements/genai~ ~./stratagems/genai~
+COPY + ~scs_replacements/genai_hlaChoices_vanilla~ ~./stratagems/genai/hla_choices/vanilla~
+COPY + ~scs_replacements/genai_ssl~ ~./stratagems/genai/ssl~
+COPY + ~scs_replacements/lib~ ~./stratagems/lib~
+COPY + ~scs_replacements/mage~ ~./stratagems/mage~
+COPY + ~scs_replacements/priest~ ~./stratagems/priest~
+COPY + ~scs_replacements/stratagems.ini~ ~./stratagems~
